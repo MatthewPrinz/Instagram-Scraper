@@ -46,4 +46,6 @@ Due to rate limit errors, if one sends too many requests to the API, an account 
 
 
 
-Known bugs: If the program crashes (or errors out), on next run, it resumes downloading everyone - except those you told it not too. If it crashes often, users_to_not_download.txt grows exponentially in size. Admittedly, for this to be a problem, it'd take about 40+ tries. It also resets on succesful completion of the program.
+## Known bugs 
+
+If the program crashes (or errors out), on next run, it resumes downloading everyone - except those you told it not too. If it crashes often, users_to_not_download.txt grows exponentially in size. Admittedly, for this to be a problem, it'd take about 40+ tries. It also resets on succesful completion of the program.
