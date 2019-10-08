@@ -32,7 +32,7 @@ users_to_not_download.txt: This file is created by the program. If the program e
 
 Due to rate limit errors, if one sends too many requests to the API, an account will be rate limited (and locked out of the API). To try to combat this, the program sleeps a random amount between 50 and 60 seconds in between each users posts that it accesses. If one has multiple accounts to download with and inputs them into usernames.txt and passwords.txt, the program will attempt to log into each of them sequentially.
 
-Possible improvements: 
+## Possible improvements
 
   * multithreading with each client.
   * GUI 
@@ -40,7 +40,7 @@ Possible improvements:
 
 
 
-To come: 
+## To come
 
 PyTorch image classifier using these photos and various other ML related applications to social media (seeing effects of tags and captions on exposure).
 
