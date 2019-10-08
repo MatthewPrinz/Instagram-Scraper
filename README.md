@@ -36,13 +36,13 @@ Due to rate limit errors, if one sends too many requests to the API, an account 
 
   * multithreading with each client.
   * GUI 
-  * Proper use of environment variables
+  * Better use of environment variables
 
 
 
 ## To come
 
-PyTorch image classifier using these photos and various other ML related applications to social media (seeing effects of tags and captions on exposure).
+  * PyTorch image classifier using these photos and various other ML related applications to social media (seeing effects of tags and captions on exposure).
 
 
 
