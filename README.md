@@ -1,22 +1,45 @@
 # Instagram Scraper
-Uses instagram-private-api to download posts based off what a user follows. Reliant on a few .txt files that you must write yourself:
+Uses instagram-private-api to download posts of the users that a user follows. Reliant on a few .txt files that you must write yourself:
 
 Required:
+
 usersnames.txt*: the usersname(s) of users you will log into to access the API. Separate each username with a new line.
+
 passwords.txt: the password(s) accompanying the username(s) in usersnames.txt. 
 
 Optional:
+
 paths.txt: the full path to where you want images and videos to be downloaded, using front slashes instead of backslashes. Separate the path to images and videos with a new line. Otherwise, downloads to wherever the project is located. Example: 
 
 C:/User/Pictures
+
 C:/User/Videos
+
+
+Demonstration of use:
+
+![](https://i.imgur.com/bSH3GfI.gif)
+
+
+Afterwards:
+
+![](https://i.imgur.com/fj1vJLR.png)
+
 
 
 Due to rate limit errors, if one sends too many requests to the API, an account will be rate limited (and locked out of the API). To try to combat this, the program sleeps a random amount between 50 and 60 seconds in between each users posts that it accesses. If one has multiple accounts to download with and inputs them into usernames.txt and passwords.txt, the program will attempt to log into each of them sequentially.
 
-Changes for improvements: multithreading with each client.
+Possible improvements: 
 
-To come: PyTorch image classifier using these photos and various other ML related applications to social media (seeing effects of tags and captions on exposure).
+  * multithreading with each client.
+  * GUI 
+  * Proper use of environment variables
+
+
+
+To come: 
+
+PyTorch image classifier using these photos and various other ML related applications to social media (seeing effects of tags and captions on exposure).
 
 
 
