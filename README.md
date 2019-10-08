@@ -1,13 +1,13 @@
 # Instagram Scraper
 Uses instagram-private-api to download posts of the users that a user follows. Reliant on a few .txt files that you must write yourself:
 
-Required:
+## Required
 
 usersnames.txt*: the usersname(s) of users you will log into to access the API. Separate each username with a new line.
 
 passwords.txt: the password(s) accompanying the username(s) in usersnames.txt. 
 
-Optional:
+## Optional
 
 paths.txt: the full path to where you want images and videos to be downloaded, using front slashes instead of backslashes. Separate the path to images and videos with a new line. Otherwise, downloads to wherever the project is located. Example: 
 
@@ -15,13 +15,16 @@ C:/User/Pictures
 
 C:/User/Videos
 
+## Created by the program
+users_to_not_download.txt: This file is created by the program. If the program errors out, then you can resume and it will not download the stories of the users inside this .txt file.
 
-Demonstration of use:
+
+## Demonstration of use:
 
 ![](https://i.imgur.com/bSH3GfI.gif)
 
 
-Afterwards:
+## Afterwards:
 
 ![](https://i.imgur.com/fj1vJLR.png)
 
