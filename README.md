@@ -3,9 +3,17 @@ Uses instagram-private-api to download posts of the users that a user follows. R
 
 ## Required
 
-usersnames.txt*: the usersname(s) of users you will log into to access the API. Separate each username with a new line.
+usersnames.txt: the usersname(s) of users you will log into to access the API. Separate each username with a new line.
 
 passwords.txt: the password(s) accompanying the username(s) in usersnames.txt. 
+
+program_last_ran.txt: This will download all the available posts. When the program is ran again, it will download the posts that have been uploaded since the program was last ran. Put the output of the following code block into your post if you want to download all posts since yesterday - time.time() will output the number of seconds since the epoch (December 31st, 1969).
+```python
+>>> import time
+>>> print(time.time() - (1 * 24 * 60 * 60)) # 1 day ago * 24 hours per day * 60 minutes per hour * 60 seconds per minute
+1570829823.5312817
+```
+
 
 ## Optional
 
