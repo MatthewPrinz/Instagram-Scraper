@@ -182,9 +182,6 @@ def download_media(url: str, user: User, media_type: int, image_of_video_story: 
     video_name = video_path + video_name_no_extension + '.mp4'
     full_image_name = os.path.join(image_path, image_name)
     full_video_name = os.path.join(video_path, video_name)
-    # Forces image names and video names to be lower case to fit with RegEx matching for duplicates
-    full_image_name = full_image_name.lower()
-    full_video_name = full_video_name.lower()
     if media_type == 1:
         # get file-like object from request
         response = requests.get(url, stream=True)
@@ -358,7 +355,7 @@ def main():
     # by \n
     #
     # If users_to_not_download.txt exists, read from it and do not download all users inside.
-    # users_to_not_download.txt will be deleted at the end of the program. If the program crashes while
+    # users_to_not_download.txt will be deleted at the end of the program. If the program crashes - no worries you don't have to re-make users_to_not_download.txt
     # ================================================================================================================ #
     names_entered_by_user = []
 
